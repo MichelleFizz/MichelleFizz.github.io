@@ -5,15 +5,14 @@
     }
 
     html {
-      font-size: 1.2rem; /* Base font size for scaling */
+      font-size: 1.2rem; 
     }
 
     body {
       background-color: #fdf6e3;
       font-family: 'Segoe UI', sans-serif;
       color: #333;
-      margin: 0;
-      padding: 0;
+
     }
 
     /* Navbar */
