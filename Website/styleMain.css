@@ -1,109 +1,73 @@
-  * {
-      box-sizing: border-box;
+body {
       margin: 0;
-      padding: 0;
-    }
-
-    html {
-      font-size: 1.2rem; 
-    }
-
-    body {
-      background-color: #fdf6e3;
       font-family: 'Segoe UI', sans-serif;
+      background: #fdf6e3;
       color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: #ffcc00;
+      padding: 1rem 0;
+    }
+
+    header h1 {
       margin: 0;
-      padding: 0;
-    }
-
-    .navbar {
-      background-color: #ffcc00;
-
-    }
-
-    .navbar-brand {
       font-size: 2rem;
       color: #d40000;
-      font-weight: bold;
-      display: block;
-      text-align: center;
     }
 
-    .nav-link {
-      color: #333 !important;
-      font-weight: 500;
+    a.nav-link {
       display: block;
-      text-align: center;
       margin-top: 0.5rem;
+      color: #333;
       text-decoration: none;
+      font-weight: 500;
     }
 
-    /* Container */
-    .container {
-      max-width: 100%;
-      padding: 0 15px;
+    h2 {
+      margin: 2rem 0 1rem;
+      font-size: 1.8rem;
     }
 
-    /* Pokeball Section */
     .pokeball-row {
       display: flex;
-      justify-content: center;
-      gap: 40px;
       flex-wrap: wrap;
-      margin-top: 40px;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
     }
 
     .pokeball-option {
-      text-align: center;
-      width: clamp(120px, 20vw, 200px);
+      width: clamp(120px, 25vw, 180px);
     }
 
     .pokeball-option img {
       width: 100%;
-      max-width: 120px;
-      height: auto;
       transition: transform 0.3s ease;
-      margin: 0 auto;
     }
 
     .pokeball-option img:hover {
-      transform: scale(1.5);
+      transform: scale(1.4);
     }
 
     .pokeball-option p {
-      font-size: 1.6rem;
-      font-weight: 500;
-      margin: 1rem 0;
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
     }
 
-    .btn-warning {
-      background-color: #ff9900;
-      border: none;
-      font-weight: bold;
-      font-size: 1rem;
-      padding: 0.75rem 2rem;
-      border-radius: 7px;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
-      color: white;
+    .btn {
       display: inline-block;
+      padding: 0.5rem 1.5rem;
+      background: #ff9900;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
     }
 
-    .btn-warning:hover {
-      background-color: #e68a00;
-    }
-
-    /* Responsive tweaks for smaller screens */
-    @media (max-width: 600px) {
-      html {
-        font-size: 1rem;
-      }
-
-      .pokeball-option p {
-        font-size: 1.2rem;
-      }
-
-      .btn-warning {
-        padding: 0.5rem 1.5rem;
-      }
+    .btn:hover {
+      background: #e68a00;
     }
