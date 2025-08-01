@@ -1,19 +1,19 @@
 /* General body styling */
 body {
   background-color: #fdf6e3;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI';
   color: #333;
   margin: 0;
   padding: 0;
 }
 
-/* Navbar styling */
+/* Navbar */
 .navbar {
-  background-color: #ffcc00 !important;
+  background-color: #ffcc00;
 }
 
 .navbar-brand {
-  font-size: 1.8rem;
+  font-size: 30px;
   color: #d40000;
 }
 
@@ -22,13 +22,44 @@ body {
   font-weight: 500;
 }
 
-/* Container styling */
-.container {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
-  max-width: 500px;
+/* Main container for Pokeballs */
+.pokeball-container {
+  background-color: white;
+  border-radius: 16px;
+  padding: 60px 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Pokéball row layout */
+.pokeball-row {
+  display: flex;
+  justify-content: center;
+  gap: 95px;
+  flex-wrap: wrap;
+}
+
+/* Each Pokéball option */
+.pokeball-option {
+  text-align: center;
+}
+
+.pokeball-option img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+
+.pokeball-option img:hover {
+  transform: scale(1.5);
+}
+
+/* Option text */
+.pokeball-option p {
+  font-size: 30px;
+  font-weight: 500;
 }
 
 /* Button styling */
@@ -36,8 +67,8 @@ body {
   background-color: #ff9900;
   border: none;
   font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 25px;
+  padding: 10px 50px;
+  border-radius: 7px;
   transition: background-color 0.3s ease;
 }
 
@@ -45,14 +76,3 @@ body {
   background-color: #e68a00;
 }
 
-/* Image hover effect */
-img.img-fluid:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
-
-/* Option label */
-p {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
