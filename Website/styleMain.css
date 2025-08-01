@@ -1,84 +1,110 @@
-/* General body styling */
-body {
-  background-color: #fdf6e3;
-  font-family: 'Segoe UI';
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Navbar */
-.navbar {
-  background-color: #ffcc00;
-}
+    html {
+      font-size: 1.2rem; /* Base font size for scaling */
+    }
 
-.navbar-brand {
-  font-size: 30px;
-  color: #d40000;
-}
+    body {
+      background-color: #fdf6e3;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-.nav-link {
-  color: #333 !important;
-  font-weight: 500;
-}
+    /* Navbar */
+    .navbar {
+      background-color: #ffcc00;
+      padding: 1rem;
+    }
 
-/* Main container for Pokeballs */
-.pokeball-container {
-  background-color: white;
-  border-radius: 16px;
-  padding: 60px 30px;
-  max-width: 1000px;
-  margin: 40px auto;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
+    .navbar-brand {
+      font-size: 2rem;
+      color: #d40000;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+    }
 
-/* Pokéball row layout */
-.pokeball-row {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 40px
-}
+    .nav-link {
+      color: #333 !important;
+      font-weight: 500;
+      display: block;
+      text-align: center;
+      margin-top: 0.5rem;
+      text-decoration: none;
+    }
 
-/* Each Pokéball option */
-.pokeball-option {
-  text-align: center;
-  flex: 0 0 auto;
-  width: 20vw;
-  max-width: 150px;
-  height: auto;
-}
+    /* Container */
+    .container {
+      max-width: 100%;
+      padding: 0 15px;
+    }
 
-.pokeball-option img {
-  width: 100px;
-  height: 100px;
-  transition: transform 0.3s ease;
-  margin: 0 auto;
-}
+    /* Pokeball Section */
+    .pokeball-row {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
 
-.pokeball-option img:hover {
-  transform: scale(1.5);
-}
+    .pokeball-option {
+      text-align: center;
+      width: clamp(120px, 20vw, 200px);
+    }
 
-/* Option text */
-.pokeball-option p {
-  font-size: 30px;
-  font-weight: 500;
-}
+    .pokeball-option img {
+      width: 100%;
+      max-width: 120px;
+      height: auto;
+      transition: transform 0.3s ease;
+      margin: 0 auto;
+    }
 
-/* Button styling */
-.btn-warning {
-  background-color: #ff9900;
-  border: none;
-  font-weight: bold;
-  padding: 10px 50px;
-  border-radius: 7px;
-  transition: background-color 0.3s ease;
-}
+    .pokeball-option img:hover {
+      transform: scale(1.5);
+    }
 
-.btn-warning:hover {
-  background-color: #e68a00;
-}
+    .pokeball-option p {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin: 1rem 0;
+    }
 
+    .btn-warning {
+      background-color: #ff9900;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 0.75rem 2rem;
+      border-radius: 7px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+    }
+
+    .btn-warning:hover {
+      background-color: #e68a00;
+    }
+
+    /* Responsive tweaks for smaller screens */
+    @media (max-width: 600px) {
+      html {
+        font-size: 1rem;
+      }
+
+      .pokeball-option p {
+        font-size: 1.2rem;
+      }
+
+      .btn-warning {
+        padding: 0.5rem 1.5rem;
+      }
+    }
