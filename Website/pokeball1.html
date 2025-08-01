@@ -5,41 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pokeball 1 Reveal</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body style="font-size: 1.5rem;"> <!-- Base font size increased -->
 
-  <nav class="navbar navbar-expand-lg" style="background-color: #FFA500;">
+  <nav class="navbar navbar-expand-lg" style="background-color: #FFA500; padding: 1.5rem;">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold" style="color: white">Charmander</a>
+      <a class="navbar-brand fw-bold" style="color: white; font-size: 2rem;">Charmander</a>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="Bootstrap.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="pokeball1.html">Pokeball 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="Bootstrap.html" style="font-size: 1.25rem;">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="pokeball1.html" style="font-size: 1.25rem;">Pokeball 1</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <div class="container text-center py-5">
-    <h1 class="mb-4" style="color: red;">I am a... Charmander!</h1>
-    <ul class="list-group w-50 mx-auto mb-4" style="color: red">
-        <div style="display: flex; justify-content: center; align-items: center;">
-        <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png" class="img-fluid" style="max-width: 200px;" alt="Charmander">
-        </div>
-        <p>
-            <ul> 
-                <li> Type: Fire &#x1F525;</li>
-                <li>Next Evolution: Charmeleon</li>
-                <li>The flame on its tail shows the strength of its life-force. If Charmander is weak, the flame also burns weakly.</li>
-            </ul>
-            </p>
+    <h1 class="mb-4" style="color: red; font-size: 3rem;">I am a... Charmander!</h1>
 
+    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 2rem;">
+      <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png"
+           class="img-fluid"
+           style="max-width: 300px;"
+           alt="Charmander">
+    </div>
+
+    <ul class="list-group w-75 mx-auto mb-4" style="color: red; font-size: 1.3rem;">
+      <li class="list-group-item">🔥 Type: Fire</li>
+      <li class="list-group-item">Next Evolution: Charmeleon</li>
+      <li class="list-group-item">The flame on its tail shows the strength of its life-force. If Charmander is weak, the flame also burns weakly.</li>
     </ul>
-    <a href="Bootstrap.html" class="btn btn-outline-warning">← Back to Pokeballs</a>
+
+    <a href="Bootstrap.html" class="btn btn-outline-warning btn-lg">← Back to Pokeballs</a>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="loading.js"></script>
 </body>
 </html>
