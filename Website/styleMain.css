@@ -46,6 +46,9 @@ body {
 .pokeball-option {
   text-align: center;
   flex: 0 0 auto;
+  width: 20vw;
+  max-width: 150px;
+  height: auto;
 }
 
 .pokeball-option img {
