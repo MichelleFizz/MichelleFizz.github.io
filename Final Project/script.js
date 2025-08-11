@@ -1,9 +1,7 @@
-// Very Simple Portfolio JavaScript
 
-// Initialize icons
 feather.replace();
 
-// Mobile menu toggle - check if elements exist first
+
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.getElementById('nav-menu');
 
@@ -22,7 +20,7 @@ if (navToggle && navMenu) {
     };
 }
 
-// Close menu when clicking nav links
+
 document.querySelectorAll('.nav-link').forEach(function(link) {
     link.onclick = function() {
         if (navMenu) {
@@ -38,4 +36,16 @@ document.querySelectorAll('.nav-link').forEach(function(link) {
     };
 });
 
-// That's it! Simple portfolio with mobile menu only.
+
+const toggleBtn = document.getElementById("toggleProfileBtn");
+const profileSection = document.getElementById("profileSection");
+
+toggleBtn.addEventListener("click", () => {
+  if (profileSection.style.display === "none") {
+    profileSection.style.display = "block";
+    toggleBtn.textContent = "Hide Profile Picture";
+  } else {
+    profileSection.style.display = "none";
+    toggleBtn.textContent = "Show Profile Picture";
+  }
+});
