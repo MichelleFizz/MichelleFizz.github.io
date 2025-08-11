@@ -57,7 +57,7 @@ body {
 .nav-logo a {
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var;
     text-decoration: none;
 }
 
